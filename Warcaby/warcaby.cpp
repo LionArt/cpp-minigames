@@ -390,20 +390,19 @@ void wykonajRuch(string polecenie,string polecenie2,bool gracz, char (&plansza)[
         plansza[temp_iy1][temp_ix1]=' ';
         //usuwamy zbijany pionek;
     }
-        char pionek;
-        if(!gracz)
-        pionek='o';
-        else
-        pionek='x';
-        temp_x="";
-        temp_y="";
-        temp_y+=polecenie2[0];
-        temp_x+=polecenie2[1];
-        temp_iy1=atoi(temp_y.c_str());
-        temp_ix1=atoi(temp_x.c_str());
-        plansza[temp_iy1][temp_ix1]=pionek;
-        //rysowanie pionka w nowej pozycji
-
+    char pionek;
+    if(!gracz)
+    pionek='o';
+    else
+    pionek='x';
+    temp_x="";
+    temp_y="";
+    temp_y+=polecenie2[0];
+    temp_x+=polecenie2[1];
+    temp_iy1=atoi(temp_y.c_str());
+    temp_ix1=atoi(temp_x.c_str());
+    plansza[temp_iy1][temp_ix1]=pionek;
+    //rysowanie pionka w nowej pozycji
 }
 
 int main()
